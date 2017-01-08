@@ -40,6 +40,7 @@ cacheSolve <- function(x, ...) {
         if (!is.null(inv)) {
              return(inv)
         }
+        # do calculate the inverse, store in cache and return
         inv <- solve(x$get(), ...)
         x$setinv(inv)
         inv
