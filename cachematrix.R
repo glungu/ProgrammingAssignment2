@@ -38,6 +38,7 @@ cacheSolve <- function(x, ...) {
         # check inverse is not null (cached value exists)
         inv <- x$getinv()
         if (!is.null(inv)) {
+             # return cached value
              return(inv)
         }
         # do calculate the inverse, store in cache and return
